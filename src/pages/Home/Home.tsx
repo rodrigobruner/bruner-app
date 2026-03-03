@@ -223,7 +223,7 @@ export default function Home() {
           </Timeline>
       </TimelineContainer>
           */}
-      <RockSection description={t("home.rock.desciption")} shows={t("home.rock.shows", { returnObjects: true })} />
+      <RockSection description={t("home.rock.description")} shows={t("home.rock.shows", { returnObjects: true })} />
       <Footer>
         <p>
           &copy; {new Date().getFullYear()} Rodrigo Bruner. {t("home.footer.rights")}
