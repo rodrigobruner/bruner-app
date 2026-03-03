@@ -1,4 +1,4 @@
-import { Component, useCallback, useEffect, useMemo, useState, type MouseEvent } from "react";
+import { useCallback, useEffect, useMemo, useState, type MouseEvent } from "react";
 
 import PortfolioSection from "./sections/portfolio/PortfolioSection"
 import RockSection from "./sections/rock/RockSection"
