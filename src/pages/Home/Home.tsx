@@ -1,5 +1,6 @@
 import { Component, useCallback, useEffect, useMemo, useState, type MouseEvent } from "react";
-import FlipCard from "../../componets/FlipCard/FlipCard"
+import FlipCard from "../../componets/FlipCard/FlipCard";
+import ProjectCard from "../../componets/ProjectCard/ProjectCard";
 import { useTranslation } from "react-i18next";
 import {
   Nav,
@@ -18,8 +19,6 @@ import {
   RoundedImage,
   PortifolioTitle,
   ProjectsGrid,
-  ProjectCard,
-  ProjectImage,
   // TimelineContainer,
   // TimelineTitle,
   // Timeline,
@@ -207,42 +206,30 @@ export default function Home() {
       <PortifolioContainer id="portfolio">
         <PortifolioTitle>{t("home.portfolio.title")}</PortifolioTitle>
         <ProjectsGrid>
-          <ProjectCard>
-            <ProjectImage
-              src="https://github.com/rodrigobruner/out_of_the_nest_android_app/raw/main/images/screen_recording.gif"
-              alt={t("home.portfolio.projects.project1.title")}
-            />
-            <h3>{t("home.portfolio.projects.project1.title")}</h3>
-            <p>{t("home.portfolio.projects.project1.description")}</p>
-            <a href="https://github.com/rodrigobruner/out_of_the_nest_android_app/" target="_blank" rel="noopener noreferrer">
-                <FaGithubAlt size={28} color="#fbbf24" />
-                {t("home.portfolio.github")}
-            </a>
-          </ProjectCard>
-          <ProjectCard>
-            <ProjectImage
-              src="https://github.com/rodrigobruner/car-reservation-system/raw/main/screenshot.gif"
-              alt={t("home.portfolio.projects.project2.title")}
-            />
-            <h3>{t("home.portfolio.projects.project2.title")}</h3>
-            <p>{t("home.portfolio.projects.project2.description")}</p>
-            <a href="https://github.com/rodrigobruner/car-reservation-system/" target="_blank" rel="noopener noreferrer">
-                <FaGithubAlt size={28} color="#fbbf24" />
-                {t("home.portfolio.github")}
-            </a>
-          </ProjectCard>
-          <ProjectCard>
-            <ProjectImage
-              src="https://github.com/rodrigobruner/cleverOwl/raw/main/screenshot.gif"
-              alt={t("home.portfolio.projects.project3.title")}
-            />
-            <h3>{t("home.portfolio.projects.project3.title")}</h3>
-            <p>{t("home.portfolio.projects.project3.description")}</p>
-            <a href="https://github.com/rodrigobruner/cleverOwl/" target="_blank" rel="noopener noreferrer">
-                <FaGithubAlt size={28} color="#fbbf24" />
-                {t("home.portfolio.github")}
-            </a>
-          </ProjectCard>
+          <ProjectCard
+            imageUrl="https://github.com/rodrigobruner/out_of_the_nest_android_app/raw/main/images/screen_recording.gif"
+            imageAlt={t("home.portfolio.projects.project1.title")}
+            title={t("home.portfolio.projects.project1.title")}
+            description={t("home.portfolio.projects.project1.description")}
+            url="https://github.com/rodrigobruner/out_of_the_nest_android_app/"
+            viewOnGithub={t("home.portfolio.github")}
+          />
+          <ProjectCard
+            imageUrl="https://github.com/rodrigobruner/car-reservation-system/raw/main/screenshot.gif"
+            imageAlt={t("home.portfolio.projects.project2.title")}
+            title={t("home.portfolio.projects.project2.title")}
+            description={t("home.portfolio.projects.project2.description")}
+            url="https://github.com/rodrigobruner/car-reservation-system/"
+            viewOnGithub={t("home.portfolio.github")}
+          />
+          <ProjectCard
+            imageUrl="https://github.com/rodrigobruner/cleverOwl/raw/main/screenshot.gif"
+            imageAlt={t("home.portfolio.projects.project3.title")}
+            title={t("home.portfolio.projects.project3.title")}
+            description={t("home.portfolio.projects.project3.description")}
+            url="https://github.com/rodrigobruner/cleverOwl/"
+            viewOnGithub={t("home.portfolio.github")}
+          />
         </ProjectsGrid>
       </PortifolioContainer>
       {/*
