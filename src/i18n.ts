@@ -11,10 +11,10 @@ const resources = {
         timeline: "Timeline",
         rock: "Rock",
       },
-      tribute:{
+      tribute: {
         message: "My deepest condolences to the families of the victims and to the entire community of Tumbler Ridge, B.C., during this time of profound sorrow. May you find strength, unity, and comfort in one another.",
         date: "2026-02-18",
-        url:"https://www.cbc.ca/news/canada/british-columbia/suspect-s-mother-victim-tumbler-ridge-mass-shooting-9.7085200"
+        url: "https://www.cbc.ca/news/canada/british-columbia/suspect-s-mother-victim-tumbler-ridge-mass-shooting-9.7085200"
       },
       home: {
         title: "Rodrigo Bruner",
@@ -55,13 +55,13 @@ const resources = {
         rock: {
           description: "Rock has always been an important part of my life. It's the soundtrack that inspires me, motivates me, and accompanies me in different moments. Whenever possible, I like to reconnect with that energy at concerts of the bands I enjoy; it's a way to recharge and live intense experiences that also drive me in my work as a developer.",
           shows: {
-            acdc2026:{
+            acdc2026: {
               description: "Coming soon. On Sep. 16, 2026",
             },
-            gunsnroses:{
+            gunsnroses: {
               description: "Coming soon. On Aug. 05, 2026",
             },
-            motleycrue:{
+            motleycrue: {
               description: "Coming soon. On Jul. 22, 2026",
             },
             theoffspring: {
@@ -87,7 +87,7 @@ const resources = {
             }
           }
         },
-        footer:{
+        footer: {
           rights: "All rights reserved.",
           contact: "Connect with me on LinkedIn"
         }
@@ -103,10 +103,10 @@ const resources = {
         timeline: "Linha do Tempo",
         rock: "Rock",
       },
-      tribute:{
+      tribute: {
         message: "Meus mais sinceros sentimentos aos familiares das vítimas e a toda a comunidade de Tumbler Ridge, B.C., neste momento de profunda dor. Que encontrem força, união e conforto uns nos outros.",
         date: "2026-02-18",
-        url:"https://g1.globo.com/mundo/noticia/2026/02/11/ataque-a-tiros-no-canada-atentados-sao-raros-no-pais-que-tem-leis-rigidas-para-o-porte-de-armas.ghtml"
+        url: "https://g1.globo.com/mundo/noticia/2026/02/11/ataque-a-tiros-no-canada-atentados-sao-raros-no-pais-que-tem-leis-rigidas-para-o-porte-de-armas.ghtml"
       },
       home: {
         title: "Rodrigo Bruner",
@@ -147,19 +147,19 @@ const resources = {
         rock: {
           description: "O rock sempre foi uma parte importante da minha vida. É a trilha sonora que me inspira, me motiva e me acompanha em diferentes momentos. Sempre que possível, gosto de me reencontrar com essa energia em shows das bandas que curto, é uma forma de me recarregar e viver experiências intensas que depois também me impulsionam no meu trabalho como desenvolvedor.",
           shows: {
-            acdc2026:{
+            acdc2026: {
               description: "Em breve. Em 16 de Setembro de 2026",
             },
-            gunsnroses:{
+            gunsnroses: {
               description: "Em breve. Em 05 de Agosto de 2026",
             },
-            motleycrue:{
+            motleycrue: {
               description: "Em breve. Em 22 de Julho de 2026",
             },
             theoffspring: {
               description: "Jimmy Eat World surpreendeu na abertura, e o The Offspring fez o público vibrar com hits, risadas e uma homenagem inesquecível a Ozzy Osbourne, pura emoção!",
             },
-            acdc: {
+            acdc2025: {
               description: "Viajamos 9h de Waterloo a Cleveland para realizar um sonho. The Pretty Reckless incendiou o palco, e Angus Young fez história com solos incríveis, o melhor show da minha vida.",
             },
             velhasvirgens: {
@@ -179,7 +179,7 @@ const resources = {
             }
           }
         },
-        footer:{
+        footer: {
           rights: "Todos os direitos reservados.",
           contact: "Conecte-se comigo no LinkedIn"
         }
