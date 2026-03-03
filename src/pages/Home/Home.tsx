@@ -36,13 +36,16 @@ import { BsChatHeart, BsCodeSquare } from "react-icons/bs"
 
 import bruner_logo from "../../assets/images/bruner_logo.png"
 import bruner_rock from "../../assets/images/bruner_rock.png"
-import rock_theoffspring_2025 from "../../assets/images/rock_theoffspring_2025.jpg"
-import rock_acdc_2025 from "../../assets/images/rock_acdc_2025.png"
-import rock_kiss_2023 from "../../assets/images/rock_kiss_2023.jpg"
-import rock_scorpions_2023 from "../../assets/images/rock_scorpions_2023.png"
-import rock_deep_purple_2017 from "../../assets/images/rock_deep_purple_2017.png"
-import rock_massacration_2023 from "../../assets/images/rock_massacration_2023.png"
-import rock_velhas_virgens_2024 from "../../assets/images/rock_velhas_virgens_2024.jpg"
+import rock_acdc_2026 from "../../assets/images/rock_acdc_2026.webp"
+import rock_gunsnroses_2026 from "../../assets/images/rock_guns_n_roses_2026.webp"
+import rock_motleycrue_2026 from "../../assets/images/rock_motley_crue_2026.webp"
+import rock_theoffspring_2025 from "../../assets/images/rock_theoffspring_2025.webp"
+import rock_acdc_2025 from "../../assets/images/rock_acdc_2025.webp"
+import rock_kiss_2023 from "../../assets/images/rock_kiss_2023.webp"
+import rock_scorpions_2023 from "../../assets/images/rock_scorpions_2023.webp"
+import rock_deep_purple_2017 from "../../assets/images/rock_deep_purple_2017.webp"
+import rock_massacration_2023 from "../../assets/images/rock_massacration_2023.webp"
+import rock_velhas_virgens_2024 from "../../assets/images/rock_velhas_virgens_2024.webp"
 import black_ribbon from "../../assets/images/black_ribbon.png"
 import LanguageSwitcher from "../../componets/LanguageSwitcher/LanguageSwitcher"
 
@@ -262,6 +265,24 @@ export default function Home() {
         <RockDescription>{t("home.rock.description")}</RockDescription>
         <RockGrid>
         <FlipCard 
+          image={rock_acdc_2026}
+          title='Mötley Crüe'
+          subtitle='The Return Of The Carnival Of Sins'
+          note='Toronto, ON, Canada'
+          text={t("home.rock.shows.acdc2026.description")}/>
+        <FlipCard 
+          image={rock_gunsnroses_2026}
+          title='Mötley Crüe'
+          subtitle='The Return Of The Carnival Of Sins'
+          note='Toronto, ON, Canada'
+          text={t("home.rock.shows.gunsnroses.description")}/>
+        <FlipCard 
+          image={rock_motleycrue_2026}
+          title='Mötley Crüe'
+          subtitle='The Return Of The Carnival Of Sins'
+          note='Toronto, ON, Canada'
+          text={t("home.rock.shows.motleycrue.description")}/>
+        <FlipCard 
           image={rock_theoffspring_2025}
           title='The Offspring'
           subtitle='Supercharged 2025'
@@ -273,7 +294,7 @@ export default function Home() {
           title='AC/DC'
           subtitle='Power up Tour 2025'
           note='Cleveland, OH, USA'
-          text={t("home.rock.shows.acdc.description")}/>
+          text={t("home.rock.shows.acdc2025.description")}/>
 
         <FlipCard 
           image={rock_velhas_virgens_2024}

@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   position: fixed;
   width: 450px;
   min-height: 75px;
-  background: #db2f2f80;
+  background: #fbbf24;
   border-radius: 40px;
   z-index: 10;
   backdrop-filter: blur(10px);

@@ -54,10 +54,19 @@ const resources = {
         rock: {
           description: "Rock has always been an important part of my life. It's the soundtrack that inspires me, motivates me, and accompanies me in different moments. Whenever possible, I like to reconnect with that energy at concerts of the bands I enjoy; it's a way to recharge and live intense experiences that also drive me in my work as a developer.",
           shows: {
+            acdc2026:{
+              description: "Coming soon. On Sep. 16, 2026",
+            },
+            gunsnroses:{
+              description: "Coming soon. On Aug. 05, 2026",
+            },
+            motleycrue:{
+              description: "Coming soon. On Jul. 22, 2026",
+            },
             theoffspring: {
               description: "Jimmy Eat World surprised in the opening, and The Offspring made the audience roar with hits, laughs, and an unforgettable tribute to Ozzy Osbourne, pure emotion!",
             },
-            acdc: {
+            acdc2025: {
               description: "We traveled 9 hours from Waterloo to Cleveland to fulfill a dream. The Pretty Reckless set the stage on fire, and Angus Young made history with incredible solos, the best show of my life.",
             },
             velhasvirgens: {
@@ -136,6 +145,15 @@ const resources = {
         rock: {
           description: "O rock sempre foi uma parte importante da minha vida. É a trilha sonora que me inspira, me motiva e me acompanha em diferentes momentos. Sempre que possível, gosto de me reencontrar com essa energia em shows das bandas que curto, é uma forma de me recarregar e viver experiências intensas que depois também me impulsionam no meu trabalho como desenvolvedor.",
           shows: {
+            acdc2026:{
+              description: "Em breve. Em 16 de Setembro de 2026",
+            },
+            gunsnroses:{
+              description: "Em breve. Em 05 de Agosto de 2026",
+            },
+            motleycrue:{
+              description: "Em breve. Em 22 de Julho de 2026",
+            },
             theoffspring: {
               description: "Jimmy Eat World surpreendeu na abertura, e o The Offspring fez o público vibrar com hits, risadas e uma homenagem inesquecível a Ozzy Osbourne, pura emoção!",
             },
