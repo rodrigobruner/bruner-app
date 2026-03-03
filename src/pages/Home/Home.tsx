@@ -266,14 +266,14 @@ export default function Home() {
         <RockGrid>
         <FlipCard 
           image={rock_acdc_2026}
-          title='Mötley Crüe'
-          subtitle='The Return Of The Carnival Of Sins'
+          title='AC/DC'
+          subtitle='Power up Tour 2026'
           note='Toronto, ON, Canada'
           text={t("home.rock.shows.acdc2026.description")}/>
         <FlipCard 
           image={rock_gunsnroses_2026}
-          title='Mötley Crüe'
-          subtitle='The Return Of The Carnival Of Sins'
+          title="Guns N' Roses"
+          subtitle='World Tour 2026'
           note='Toronto, ON, Canada'
           text={t("home.rock.shows.gunsnroses.description")}/>
         <FlipCard 
