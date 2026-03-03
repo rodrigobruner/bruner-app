@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useMemo, useState, type MouseEvent } from "react"
-import { useTranslation } from "react-i18next"
+import { Component, useCallback, useEffect, useMemo, useState, type MouseEvent } from "react";
+import FlipCard from "../../componets/FlipCard/FlipCard"
+import { useTranslation } from "react-i18next";
 import {
   Nav,
   FixedIcon,
@@ -27,10 +28,6 @@ import {
   RockTitle,
   RockDescription,
   RockGrid,
-  FlipCard,
-  FlipCardInner,
-  FlipCardFront,
-  FlipCardBack,
   Footer
 } from "./Home.styles";
 
@@ -277,103 +274,54 @@ export default function Home() {
         <RockTitle>Rock and Roll 🤘</RockTitle>
         <RockDescription>{t("home.rock.description")}</RockDescription>
         <RockGrid>
-        <FlipCard>
-          <FlipCardInner>
-            <FlipCardFront>
-              <img src={rock_theoffspring_2025} alt="Rock Image" style={{width: '100%', height: '100%', borderRadius: '10px'}} />
-            </FlipCardFront>
-            <FlipCardBack>
-              <h1>The Offspring</h1>
-              <h2>Supercharged 2025</h2>
-              <p className="bold">Toronto, ON, Canada</p>
-              <p style={{padding: '20px'}}>{t("home.rock.shows.theoffspring.description")}</p>
-            </FlipCardBack>
-          </FlipCardInner>
-        </FlipCard>
+        <FlipCard 
+          image={rock_theoffspring_2025}
+          title='The Offspring'
+          subtitle='Supercharged 2025'
+          note='Toronto, ON, Canada'
+          text={t("home.rock.shows.theoffspring.description")}/>
 
-        <FlipCard>
-          <FlipCardInner>
-            <FlipCardFront>
-              <img src={rock_acdc_2025} alt="Rock Image" style={{width: '100%', height: '100%', borderRadius: '10px'}} />
-            </FlipCardFront>
-            <FlipCardBack>
-              <h1>AC/DC</h1>
-              <h2>Power up Tour 2025</h2>
-              <p className="bold">Cleveland, OH, USA</p>
-              <p style={{padding: '20px'}}>{t("home.rock.shows.acdc.description")}</p>
-            </FlipCardBack>
-          </FlipCardInner>
-        </FlipCard>
+        <FlipCard 
+          image={rock_acdc_2025}
+          title='AC/DC'
+          subtitle='Power up Tour 2025'
+          note='Cleveland, OH, USA'
+          text={t("home.rock.shows.acdc.description")}/>
 
-        <FlipCard>
-          <FlipCardInner>
-            <FlipCardFront>
-              <img src={rock_velhas_virgens_2024} alt="Rock Image" style={{width: '100%', height: '100%', borderRadius: '10px'}} />
-            </FlipCardFront>
-            <FlipCardBack>
-              <h1>Velhas Virgens</h1>
-              <h2>O bar me chama</h2>
-              <p className="bold">Joinville, SC, Brazil</p>
-              <p style={{padding: '20px'}}>{t("home.rock.shows.velhasvirgens.description")}</p>
-            </FlipCardBack>
-          </FlipCardInner>
-        </FlipCard>
+        <FlipCard 
+          image={rock_velhas_virgens_2024}
+          title='Velhas Virgens'
+          subtitle='O bar me chama'
+          note='Joinville, SC, Brazil'
+          text={t("home.rock.shows.velhasvirgens.description")}/>
 
-        <FlipCard>
-          <FlipCardInner>
-            <FlipCardFront>
-              <img src={rock_scorpions_2023} alt="Rock Image" style={{width: '100%', height: '100%', borderRadius: '10px'}} />
-            </FlipCardFront>
-            <FlipCardBack>
-              <h1>Scorpions</h1>
-              <h2>Rock Believer 2023</h2>
-              <p className="bold">Florianópolis, SC, Brazil</p>
-              <p style={{padding: '20px'}}>{t("home.rock.shows.scorpions.description")}</p>
-            </FlipCardBack>
-          </FlipCardInner>
-        </FlipCard>
+        <FlipCard 
+          image={rock_scorpions_2023}
+          title='Scorpions'
+          subtitle='Rock Believer 2023'
+          note='Florianópolis, SC, Brazil'
+          text={t("home.rock.shows.scorpions.description")}/>
 
-        <FlipCard>
-          <FlipCardInner>
-            <FlipCardFront>
-              <img src={rock_kiss_2023} alt="Rock Image" style={{width: '100%', height: '100%', borderRadius: '10px'}} />
-            </FlipCardFront>
-            <FlipCardBack>
-              <h1>Kiss</h1>
-              <h2>End of the road</h2>
-              <p className="bold">Florianópolis, SC, Brazil</p>
-              <p style={{padding: '20px'}}>{t("home.rock.shows.kiss.description")}</p>
-            </FlipCardBack>
-          </FlipCardInner>
-        </FlipCard>
+        <FlipCard 
+          image={rock_kiss_2023}
+          title='Kiss'
+          subtitle='End of the road'
+          note='Florianópolis, SC, Brazil'
+          text={t("home.rock.shows.kiss.description")}/>
 
-        <FlipCard>
-          <FlipCardInner>
-            <FlipCardFront>
-              <img src={rock_massacration_2023} alt="Rock Image" style={{width: '100%', height: '100%', borderRadius: '10px'}} />
-            </FlipCardFront>
-            <FlipCardBack>
-              <h1>Massacration</h1>
-              <h2>Metal is my life</h2>
-              <p className="bold">Joinville, SC, Brazil</p>
-              <p style={{padding: '20px'}}>{t("home.rock.shows.massacration.description")}</p>
-            </FlipCardBack>
-          </FlipCardInner>
-        </FlipCard>
+        <FlipCard 
+          image={rock_massacration_2023}
+          title='Massacration'
+          subtitle='Metal is my life'
+          note='Joinville, SC, Brazil'
+          text={t("home.rock.shows.massacration.description")}/>
 
-        <FlipCard>
-          <FlipCardInner>
-            <FlipCardFront>
-              <img src={rock_deep_purple_2017} alt="Rock Image" style={{width: '100%', height: '100%', borderRadius: '10px'}} />
-            </FlipCardFront>
-            <FlipCardBack>
-              <h1>Deep Purple, Cheap Trick & Tesla</h1>
-              <h2>Solid Rock Tour</h2>
-              <p className="bold">Curitiba, PR, Brazil</p>
-              <p style={{padding: '20px'}}>{t("home.rock.shows.deeppurple.description")}</p>
-            </FlipCardBack>
-          </FlipCardInner>
-        </FlipCard>
+        <FlipCard 
+          image={rock_deep_purple_2017}
+          title='Deep Purple, Cheap Trick & Tesla'
+          subtitle='Solid Rock Tour'
+          note='JCuritiba, PR, Brazil'
+          text={t("home.rock.shows.deeppurple.description")}/>
         
         </RockGrid>
       </RockContainer>
