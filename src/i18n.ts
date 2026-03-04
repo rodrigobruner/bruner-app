@@ -121,7 +121,7 @@ const resources = {
           linkedin: "LinkedIn",
           github: "GitHub",
           twitter: "Twitter",
-          ariaLabel: "Redes sociais",
+          socialMidiaLabel: "Redes sociais",
         },
         about: {
           title: "Criando soluções digitais com a mesma paixão de um solo de guitarra.",
