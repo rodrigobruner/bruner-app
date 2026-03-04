@@ -1,22 +1,22 @@
+import bruner_rock from "../../../../assets/images/bruner_rock.webp"
 
 import {
-  AboutContainer,
-  AboutTitle,
-  RoundedImage,
+    AboutContainer,
+    AboutTitle,
+    RoundedImage,
 
 } from "./AboutSection.styles";
 
-import bruner_rock from "../../../../assets/images/bruner_rock.webp"
 
-interface AboutArgs{
-    title:string;
+interface AboutArgs {
+    title: string;
 }
 
-export default function AboutSection(args:AboutArgs){
-    return  (
+export default function AboutSection(args: AboutArgs) {
+    return (
         <AboutContainer id="about">
-        <RoundedImage src={bruner_rock} alt="Bruner Avatar" />
-        <AboutTitle>{args.title}</AboutTitle>
+            <RoundedImage src={bruner_rock} alt="Bruner Avatar" />
+            <AboutTitle>{args.title}</AboutTitle>
         </AboutContainer>
     );
 }

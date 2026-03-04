@@ -1,13 +1,5 @@
 import FlipCard from "../../../../componets/FlipCard/FlipCard";
 
-import {
-    RockContainer,
-    RockTitle,
-    RockDescription,
-    RockGrid,
-} from "./RockSection.styles";
-
-
 import rock_acdc_2026 from "../../../../assets/images/rock_acdc_2026.webp"
 import rock_gunsnroses_2026 from "../../../../assets/images/rock_guns_n_roses_2026.webp"
 import rock_motleycrue_2026 from "../../../../assets/images/rock_motley_crue_2026.webp"
@@ -19,9 +11,18 @@ import rock_deep_purple_2017 from "../../../../assets/images/rock_deep_purple_20
 import rock_massacration_2023 from "../../../../assets/images/rock_massacration_2023.webp"
 import rock_velhas_virgens_2024 from "../../../../assets/images/rock_velhas_virgens_2024.webp"
 
-interface RockArgs{
-    description:string;
-    shows:any;
+import {
+    RockContainer,
+    RockTitle,
+    RockDescription,
+    RockGrid,
+} from "./RockSection.styles";
+
+
+
+interface RockArgs {
+    description: string;
+    shows: any;
 }
 
 export default function RockSection(args: RockArgs) {

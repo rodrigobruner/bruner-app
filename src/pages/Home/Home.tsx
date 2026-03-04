@@ -1,18 +1,13 @@
 import { useMemo } from "react";
-
 import MainSection from "./sections/main/MainSection";
 import AboutSection from "./sections/about/AboutSection";
 import PortfolioSection from "./sections/portfolio/PortfolioSection";
 // import TimelineSection from "./sections/timeline/TimelineSection";
 import RockSection from "./sections/rock/RockSection";
-
 import { useTranslation } from "react-i18next";
-
-
 import { FaHome, FaGuitar } from "react-icons/fa";
 // import { FaTimeline } from "react-icons/fa6";
 import { BsChatHeart, BsCodeSquare } from "react-icons/bs";
-
 import NavMenu from "../../componets/NavMenu/NavMenu";
 import Footer from "../../componets/Footer/Footer";
 import Badge from "../../componets/Badge/Badge";

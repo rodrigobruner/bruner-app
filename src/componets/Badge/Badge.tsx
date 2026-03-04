@@ -1,15 +1,14 @@
 import { useMemo } from "react";
 import { FixedIcon } from "./Badge.styles";
-
 import black_ribbon from "../../assets/images/black_ribbon.webp";
 
 type BadgeImage = "war" | "sorrow";
 
-interface BadgeArgs{
-    image:BadgeImage;
-    url:string;
-    message:string;
-    dateValue:string;
+interface BadgeArgs {
+  image: BadgeImage;
+  url: string;
+  message: string;
+  dateValue: string;
 }
 
 const parseLocalDate = (value: string) => {
@@ -32,29 +31,29 @@ const getTodayLocal = () => {
   return today
 }
 
-export default function Badge(args:BadgeArgs) {
-     const shouldShowTribute = useMemo(() => {
-        const tributeDate = parseLocalDate(args.dateValue)
-        if (!tributeDate) {
-          return false
-        }
-    
-        const today = getTodayLocal()
-        return tributeDate > today
-      }, [args.dateValue])
+export default function Badge(args: BadgeArgs) {
+  const shouldShowTribute = useMemo(() => {
+    const tributeDate = parseLocalDate(args.dateValue)
+    if (!tributeDate) {
+      return false
+    }
 
-    return (
-        <>
-            {
-                shouldShowTribute && (
-                    <FixedIcon>
-                        <a href={args.url} target="_blank">
-                            <img src={black_ribbon} alt="Black ribbon" style={{ width: '55px', height: '55px' }} />
-                        </a>
-                        <div className="tooltip">{args.message}</div>
-                    </FixedIcon>
-                )
-            }
-        </>
-    );
+    const today = getTodayLocal()
+    return tributeDate > today
+  }, [args.dateValue])
+
+  return (
+    <>
+      {
+        shouldShowTribute && (
+          <FixedIcon>
+            <a href={args.url} target="_blank">
+              <img src={black_ribbon} alt="Black ribbon" style={{ width: '55px', height: '55px' }} />
+            </a>
+            <div className="tooltip">{args.message}</div>
+          </FixedIcon>
+        )
+      }
+    </>
+  );
 }

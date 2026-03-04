@@ -1,8 +1,8 @@
 import {
-  TimelineContainer,
-  TimelineTitle,
-  Timeline,
-  TimelineItem,
+    TimelineContainer,
+    TimelineTitle,
+    Timeline,
+    TimelineItem,
 } from "./TimelineSection.styles";
 
 export default function TimelineSection() {
