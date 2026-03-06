@@ -1,35 +1,69 @@
+import { useState } from "react";
 import {
     TimelineContainer,
     TimelineTitle,
     Timeline,
     TimelineItem,
+    TimelineItemTitle,
+    TimelineItemContent,
 } from "./TimelineSection.styles";
 
-export default function TimelineSection() {
+type ItemType = "work" | "education";
+
+interface Item {
+    id: string,
+    type: string,
+    date: string,
+    title: string,
+    location: string,
+    description: string
+    image:string|null
+}
+
+interface ItensArgs{
+    itens: Item[],
+}
+
+export default function TimelineSection(args: ItensArgs) {
+
+    const [activeItem, setActiveItem] = useState<string | null>(null)
+
+    function returnIcon(type:any) {
+    switch (type) {
+      case "work":
+        return "💼"
+
+      case "education":
+        return "🎓"
+
+      default:
+        return "📌"
+    }
+    }
 
     return (
         <TimelineContainer id="timeline">
             <TimelineTitle>Timeline</TimelineTitle>
             <Timeline>
-                <TimelineItem>
-                    <h3>Oct 2025</h3>
-                    <h4>Finished Mobile Solutions Development</h4>
-                    <h4>@ Conestoga</h4>
-                    <p>I finished my mobile solution developement course at Conestoga College.</p>
-                </TimelineItem>
-                <TimelineItem>
-                    <h3>Oct 2023 - Aug 2025</h3>
-                    <h4>Head of software development</h4>
-                    <h4>@ Videosoft</h4>
-                    <p>Led a team of developers in creating innovative mobile solutions. Oversaw the entire development process, from ideation to deployment.</p>
-                </TimelineItem>
-                <TimelineItem>
-                    <h3>Aug 2019 - Dec 2022</h3>
-                    <h4>Software Engineering Management</h4>
-                    <h4>@ Videosoft</h4>
-                    <p>Managed a team of software engineers and led projects to develop scalable web applications. Implemented best practices for software development and ensured timely delivery of high-quality products.</p>
-                </TimelineItem>
+                {args.itens.map((item) => (
+                    <TimelineItem key={item.id}>
+
+                        <TimelineItemTitle onClick={() => setActiveItem(item.id)}>
+                            <h3>{ returnIcon(item.type) } {item.date}</h3>
+                            <h4>{item.title}</h4>
+                        </TimelineItemTitle>
+
+                        {activeItem === item.id && (
+                            <TimelineItemContent>
+                                <h4>{item.location}</h4>
+                                <p>{item.description}</p>
+                                {item.image && <img src={item.image} />}
+                            </TimelineItemContent>
+                        )}
+
+                    </TimelineItem>
+                ))}
             </Timeline>
-        </TimelineContainer>
+        </TimelineContainer >
     )
 }

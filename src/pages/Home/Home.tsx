@@ -6,12 +6,20 @@ import PortfolioSection from "./sections/portfolio/PortfolioSection";
 import RockSection from "./sections/rock/RockSection";
 import { useTranslation } from "react-i18next";
 import { FaHome, FaGuitar } from "react-icons/fa";
-// import { FaTimeline } from "react-icons/fa6";
+import { FaTimeline } from "react-icons/fa6";
 import { BsChatHeart, BsCodeSquare } from "react-icons/bs";
 import NavMenu from "../../componets/NavMenu/NavMenu";
 import Footer from "../../componets/Footer/Footer";
 import Badge from "../../componets/Badge/Badge";
 
+interface Item {
+    id: string,
+    type: string,
+    date: string,
+    title: string,
+    location: string,
+    description: string
+}
 
 export default function Home() {
 
@@ -33,12 +41,11 @@ export default function Home() {
       icon: <BsCodeSquare size={28} />,
       label: t("menu.portfolio")
     },
-    /*
-    {      
+    {
       id: "timeline",
-      icon: <FaTimeline />,
+      icon: <FaTimeline size={28} />,
       label: t("menu.timeline")
-    },*/
+    },
     {
       id: "rock",
       icon: <FaGuitar size={28} />,
@@ -48,12 +55,6 @@ export default function Home() {
 
   return (
     <>
-      <Badge
-        image="sorrow"
-        url={t("tribute.url")}
-        message={t("tribute.message")}
-        dateValue={t("tribute.date")}
-      />
       <NavMenu
         options={sections}
       />
@@ -65,6 +66,12 @@ export default function Home() {
         githubLabel={t("home.links.github")}
         socialMidiaLabel={t("home.links.socialMidiaLabel")}
       />
+      <Badge
+        imageSrc="/src/assets/images/peace.webp"
+        // url={t("tribute.url")}
+        message={t("tribute.message")}
+
+      />
       <AboutSection
         title={t("home.about.title")}
       />
@@ -73,7 +80,9 @@ export default function Home() {
         projects={t("home.portfolio.projects", { returnObjects: true })}
         viewOnGithub={t("home.portfolio.github")}
       />
-      {/* <TimelineSection/> */}
+      {/* <TimelineSection
+        itens={t("home.timeline.itens", { returnObjects: true }) as Item[]}
+      /> */}
       <RockSection
         description={t("home.rock.description")}
         shows={t("home.rock.shows", { returnObjects: true })} />

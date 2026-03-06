@@ -1,59 +1,62 @@
-import { useMemo } from "react";
-import { FixedIcon } from "./Badge.styles";
-import black_ribbon from "../../assets/images/black_ribbon.webp";
+import React, { useState } from "react";
+import {
+  Container,
+  Inner,
+  Front,
+  Back,
+  Content,
+} from "./Badge.styles";
 
-type BadgeImage = "war" | "sorrow";
+type Props = {
+  imageSrc: string;
+  imageAlt?: string;
+  title?: string;
+  message?: string;
+  size?: number;
+  className?: string;
+};
 
-interface BadgeArgs {
-  image: BadgeImage;
-  url: string;
-  message: string;
-  dateValue: string;
-}
+export default function BadgeFlip({
+  imageSrc,
+  imageAlt = "No War badge",
+  title = "NO WAR!",
+  message = "One planet. One home.",
+  size = 250,
+  className = "",
+}: Props) {
+  const [flipped, setFlipped] = useState(false);
 
-const parseLocalDate = (value: string) => {
-  const [year, month, day] = value.split("-").map((part) => Number(part))
-  if (!year || !month || !day) {
-    return null
-  }
+  const handleClick = () => {
+    const isTouchDevice =
+      typeof window !== "undefined" &&
+      (window.matchMedia("(hover: none)").matches ||
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0);
 
-  const date = new Date(year, month - 1, day)
-  if (Number.isNaN(date.getTime())) {
-    return null
-  }
-
-  return date
-}
-
-const getTodayLocal = () => {
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
-  return today
-}
-
-export default function Badge(args: BadgeArgs) {
-  const shouldShowTribute = useMemo(() => {
-    const tributeDate = parseLocalDate(args.dateValue)
-    if (!tributeDate) {
-      return false
+    if (isTouchDevice) {
+      setFlipped((prev) => !prev);
     }
-
-    const today = getTodayLocal()
-    return tributeDate > today
-  }, [args.dateValue])
+  };
 
   return (
-    <>
-      {
-        shouldShowTribute && (
-          <FixedIcon>
-            <a href={args.url} target="_blank">
-              <img src={black_ribbon} alt="Black ribbon" style={{ width: '55px', height: '55px' }} />
-            </a>
-            <div className="tooltip">{args.message}</div>
-          </FixedIcon>
-        )
-      }
-    </>
+    <Container
+      size={size}
+      className={className}
+      onClick={handleClick}
+      aria-label="Badge interativo de paz"
+    >
+      <Inner className={flipped ? "is-flipped" : ""}>
+        <Front>
+          <img src={imageSrc} alt={imageAlt} />
+        </Front>
+
+        <Back>
+          <Content>
+            <h3>{title}</h3>
+            <p>{message}</p>
+          </Content>
+        </Back>
+      </Inner>
+    </Container>
   );
 }

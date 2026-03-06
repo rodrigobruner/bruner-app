@@ -58,6 +58,7 @@ export const TimelineItem = styled.div`
   width: 50%;
   padding: 20px 40px;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:nth-child(odd) {
     left: 0;
@@ -93,7 +94,15 @@ export const TimelineItem = styled.div`
     }
   }
 
-  h3 {
+ 
+`;
+
+
+
+
+
+export const TimelineItemContent = styled.div`
+ h3 {
     margin: 0 0 8px;
     font-size: 1.5rem;
     color: #1e293b;
@@ -110,7 +119,7 @@ export const TimelineItem = styled.div`
     width: 100%;
     left: 0;
     text-align: left;
-    padding: 20px 20px;
+    padding: 0px 0px;
 
     &::before {
       left: -8px;
@@ -126,4 +135,22 @@ export const TimelineItem = styled.div`
       }
     }
   }
+`;
+
+export const TimelineItemTitle = styled.div`
+  h3 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+    color: #1e293b;
+  }
+
+  &:nth-child(odd),
+  &:nth-child(even) {
+    left: 0;
+    text-align: left;
+
+    &::before {
+      left: -8px;
+    }
+    }
 `;

@@ -1,52 +1,96 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-
-// ...existing code...
-export const FixedIcon = styled.div`
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  top: 85%;
-  right: 40px;
-  z-index: 15;
+export const Container = styled.div<{ size: number }>`
+  width: ${({ size }) => size}px;
+  height: ${({ size }) => size}px;
+  perspective: 1000px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  position:absolute;
+  top: 105%;
+  right:40px;
 
-  &:hover {
-    background: #ffecb3;
-    transform: translateY(-2px);
+  &:hover .peace-badge-flip-inner {
+    transform: rotateY(180deg);
   }
 
-  /* tooltip (janela) — escondida por padrão, mostrada ao hover */
-  .tooltip {
-    position: absolute;
-    width: 250px;
-    height: 150px;
-    right: calc(100% + 10px); /* posiciona à esquerda com gap */
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.18);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 6px;
-    color: #1e293b;
-    font-size: 0.85rem;
-    text-align: center;
-    pointer-events: none; /* evita interferir no hover do ícone */
-  }
-
-  &:hover .tooltip {
-    display: flex;
+  @media (hover: none) {
+    &:hover .peace-badge-flip-inner {
+      transform: none;
+    }
   }
 
   @media (max-width: 768px) {
-    display: flex;
+    display:none;
+  }
+
+`;
+
+export const Inner = styled.div.attrs({
+  className: "peace-badge-flip-inner",
+})`
+  position: static;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+
+  &.is-flipped {
+    transform: rotateY(180deg);
+  }
+`;
+
+const Face = styled.div`
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+`;
+
+export const Front = styled(Face)`
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+`;
+
+export const Back = styled(Face)`
+  transform: rotateY(180deg);
+  background:
+    radial-gradient(circle at top, rgba(255, 70, 70, 0.2), transparent 35%),
+    linear-gradient(135deg, #111 0%, #1a1a1a 45%, #2a2a2a 100%);
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px solid rgba(255, 72, 72, 0.35);
+`;
+
+export const Content = styled.div`
+  h3 {
+    margin: 0 0 12px;
+    color: #ff4d4d;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #f2f2f2;
   }
 `;

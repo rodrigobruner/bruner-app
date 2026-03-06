@@ -12,8 +12,8 @@ const resources = {
         rock: "Rock",
       },
       tribute: {
-        message: "My deepest condolences to the families of the victims and to the entire community of Tumbler Ridge, B.C., during this time of profound sorrow. May you find strength, unity, and comfort in one another.",
-        date: "2026-02-18",
+        message: "We share the same planet, the same sky, and the same future. Choose peace, not war. Technology should serve life. Not destruction.",
+        date: "",
         url: "https://www.cbc.ca/news/canada/british-columbia/suspect-s-mother-victim-tumbler-ridge-mass-shooting-9.7085200"
       },
       home: {
@@ -51,6 +51,27 @@ const resources = {
               description: "CleverOwl is an iOS app built with Swift, designed to help users organize their tasks in a simple and effective way.",
             },
           },
+        },
+        timeline: {
+          itens: [
+            {
+              id: "item1",
+              type: "education",
+              date: "Oct 2025",
+              title: "Finished Mobile Solutions Development",
+              location: "@ Conestoga",
+              description: "I finished my mobile solution development course at Conestoga College.",
+              image:"./assets/images/preview.png"
+            },
+            {
+              id: "item2",
+              type: "work",
+              date: "May 2024",
+              title: "Started Mobile Solutions Development",
+              location: "@ Conestoga",
+              description: "Started my program at Conestoga College."
+            }
+          ]
         },
         rock: {
           description: "Rock has always been an important part of my life. It's the soundtrack that inspires me, motivates me, and accompanies me in different moments. Whenever possible, I like to reconnect with that energy at concerts of the bands I enjoy; it's a way to recharge and live intense experiences that also drive me in my work as a developer.",
@@ -104,7 +125,7 @@ const resources = {
         rock: "Rock",
       },
       tribute: {
-        message: "Meus mais sinceros sentimentos aos familiares das vítimas e a toda a comunidade de Tumbler Ridge, B.C., neste momento de profunda dor. Que encontrem força, união e conforto uns nos outros.",
+        message: "Nós compartilhamos o mesmo planeta, mesmo céu e mesmo futuro. Escolha paz não a guerra. A tecnologia deveria servir a vida não a destruição.",
         date: "2026-02-18",
         url: "https://g1.globo.com/mundo/noticia/2026/02/11/ataque-a-tiros-no-canada-atentados-sao-raros-no-pais-que-tem-leis-rigidas-para-o-porte-de-armas.ghtml"
       },
@@ -143,6 +164,26 @@ const resources = {
               description: "CleverOwl é um aplicativo iOS construído com Swift, projetado para ajudar os usuários a organizar suas tarefas de maneira simples e eficaz.",
             },
           },
+        },
+        timeline: {
+          itens: [
+            {
+              id: "item1",
+              type: "education",
+              date: "Oct 2025",
+              title: "Finished Mobile Solutions Development",
+              location: "@ Conestoga",
+              description: "I finished my mobile solution development course at Conestoga College."
+            },
+            {
+              id: "item2",
+              type: "work",
+              date: "May 2024",
+              title: "Started Mobile Solutions Development",
+              location: "@ Conestoga",
+              description: "Started my program at Conestoga College."
+            }
+          ]
         },
         rock: {
           description: "O rock sempre foi uma parte importante da minha vida. É a trilha sonora que me inspira, me motiva e me acompanha em diferentes momentos. Sempre que possível, gosto de me reencontrar com essa energia em shows das bandas que curto, é uma forma de me recarregar e viver experiências intensas que depois também me impulsionam no meu trabalho como desenvolvedor.",
