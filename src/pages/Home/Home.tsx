@@ -6,20 +6,20 @@ import PortfolioSection from "./sections/portfolio/PortfolioSection";
 import RockSection from "./sections/rock/RockSection";
 import { useTranslation } from "react-i18next";
 import { FaHome, FaGuitar } from "react-icons/fa";
-import { FaTimeline } from "react-icons/fa6";
+// import { FaTimeline } from "react-icons/fa6";
 import { BsChatHeart, BsCodeSquare } from "react-icons/bs";
 import NavMenu from "../../componets/NavMenu/NavMenu";
 import Footer from "../../componets/Footer/Footer";
 import Badge from "../../componets/Badge/Badge";
 
-interface Item {
-    id: string,
-    type: string,
-    date: string,
-    title: string,
-    location: string,
-    description: string
-}
+// interface Item {
+//     id: string,
+//     type: string,
+//     date: string,
+//     title: string,
+//     location: string,
+//     description: string
+// }
 
 export default function Home() {
 
