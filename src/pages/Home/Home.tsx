@@ -67,7 +67,7 @@ export default function Home() {
         socialMidiaLabel={t("home.links.socialMidiaLabel")}
       />
       <Badge
-        imageSrc="/public/images/peace.webp"
+        imageSrc="/images/peace.webp"
         // url={t("tribute.url")}
         message={t("tribute.message")}
 
