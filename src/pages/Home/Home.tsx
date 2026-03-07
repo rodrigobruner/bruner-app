@@ -41,11 +41,11 @@ export default function Home() {
       icon: <BsCodeSquare size={28} />,
       label: t("menu.portfolio")
     },
-    {
-      id: "timeline",
-      icon: <FaTimeline size={28} />,
-      label: t("menu.timeline")
-    },
+    // {
+    //   id: "timeline",
+    //   icon: <FaTimeline size={28} />,
+    //   label: t("menu.timeline")
+    // },
     {
       id: "rock",
       icon: <FaGuitar size={28} />,
