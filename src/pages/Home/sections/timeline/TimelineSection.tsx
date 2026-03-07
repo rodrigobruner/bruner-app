@@ -8,7 +8,7 @@ import {
     TimelineItemContent,
 } from "./TimelineSection.styles";
 
-type ItemType = "work" | "education";
+// type ItemType = "work" | "education";
 
 interface Item {
     id: string,
