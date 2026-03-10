@@ -10,7 +10,7 @@ import { FaHome, FaGuitar } from "react-icons/fa";
 import { BsChatHeart, BsCodeSquare } from "react-icons/bs";
 import NavMenu from "../../componets/NavMenu/NavMenu";
 import Footer from "../../componets/Footer/Footer";
-import Badge from "../../componets/Badge/Badge";
+// import Badge from "../../componets/Badge/Badge";
 
 // interface Item {
 //     id: string,
@@ -66,12 +66,12 @@ export default function Home() {
         githubLabel={t("home.links.github")}
         socialMidiaLabel={t("home.links.socialMidiaLabel")}
       />
-      <Badge
+      {/* <Badge
         imageSrc="/images/peace.webp"
         // url={t("tribute.url")}
         message={t("tribute.message")}
 
-      />
+      /> */}
       <AboutSection
         title={t("home.about.title")}
       />
