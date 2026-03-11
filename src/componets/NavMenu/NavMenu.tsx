@@ -8,6 +8,7 @@ interface sections {
     id: string;
     icon: JSX.Element;
     label: string;
+    description:string;
 }[]
 
 interface MenuArgs {
@@ -61,11 +62,11 @@ export default function NavMenu(args: MenuArgs) {
     }, [args.options])
 
     return (
-        <Nav>
+        <Nav role="navigation">
             <ul>
-                {args.options.map(({ id, icon, label }) => (
+                {args.options.map(({ id, icon, label, description }) => (
                     <li key={id} className={id === activeSection ? "active" : undefined}>
-                        <a href={`#${id}`} onClick={(event) => handleNavClick(event, id)}>
+                        <a href={`#${id}`} onClick={(event) => handleNavClick(event, id)} aria-label={description}>
                             <span className="icon">{icon}</span>
                             <span className="label">{label}</span>
                         </a>

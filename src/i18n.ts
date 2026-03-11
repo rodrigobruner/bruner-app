@@ -6,10 +6,15 @@ const resources = {
     translation: {
       menu: {
         home: "Home",
+        homeDescription: "Start here and explore my universe.",
         about: "About",
+        aboutDescription: "Get to know my vision.",
         portfolio: "Portfolio",
+        portifolioDescription: "See what I build and create.",
         timeline: "Timeline",
+        timelineDescription: "Learn about my career path",
         rock: "Rock",
+        rockDescription: "A space for attitude, protest, freedom, and the spirit of rock culture."
       },
       tribute: {
         message: "We share the same planet, the same sky, and the same future. Choose peace, not war. Technology should serve life. Not destruction.",
@@ -61,7 +66,7 @@ const resources = {
               title: "Finished Mobile Solutions Development",
               location: "@ Conestoga",
               description: "I finished my mobile solution development course at Conestoga College.",
-              image:"./assets/images/preview.png"
+              image: "./assets/images/preview.png"
             },
             {
               id: "item2",
@@ -74,7 +79,7 @@ const resources = {
           ]
         },
         rock: {
-          description: "Rock has always been an important part of my life. It's the soundtrack that inspires me, motivates me, and accompanies me in different moments. Whenever possible, I like to reconnect with that energy at concerts of the bands I enjoy; it's a way to recharge and live intense experiences that also drive me in my work as a developer.",
+          description: "Rock has always been an important part of my life. It's the soundtrack that inspires me, motivates me, and accompanies me in different moments. Whenever possible, I like to reconnect with that energy at concerts of the bands I enjoy, it's a way to recharge and live intense experiences that also drive me in my work as a developer.",
           shows: {
             acdc2026: {
               description: "Coming soon. On Sep. 16, 2026",
@@ -119,10 +124,15 @@ const resources = {
     translation: {
       menu: {
         home: "Início",
+        homeDescription: "Start here and explore my universe.",
         about: "Sobre",
+        aboutDescription: "Get to know my vision.",
         portfolio: "Portfólio",
+        portfolioDescription: "See what I build and create.",
         timeline: "Linha do Tempo",
+        timelineDescription: "Learn about my career path.",
         rock: "Rock",
+        rockDescription: "A space for attitude, protest, freedom, and the spirit of rock culture."
       },
       tribute: {
         message: "Nós compartilhamos o mesmo planeta, mesmo céu e mesmo futuro. Escolha paz não a guerra. A tecnologia deveria servir a vida não a destruição.",

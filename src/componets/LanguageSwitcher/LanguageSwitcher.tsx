@@ -15,6 +15,8 @@ export default function LanguageSwitcher() {
     <S.Wrapper>
       <button
         type="button"
+        id="lang-en"
+        title="English"
         onClick={() => handleChangeLanguage("en")}
         aria-pressed={language === "en"}
       >
@@ -22,6 +24,8 @@ export default function LanguageSwitcher() {
       </button>
       <button
         type="button"
+        id="lang-pt"
+        title="Portuguese"
         onClick={() => handleChangeLanguage("pt")}
         aria-pressed={language === "pt"}
       >

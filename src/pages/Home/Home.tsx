@@ -29,27 +29,32 @@ export default function Home() {
     {
       id: "home",
       icon: <FaHome size={28} />,
-      label: t("menu.home")
+      label: t("menu.home"),
+      description: t("menu.homeDescription"),
     },
     {
       id: "about",
       icon: <BsChatHeart size={28} />,
-      label: t("menu.about")
+      label: t("menu.about"),
+      description: t("menu.aboutDescription"),
     },
     {
       id: "portfolio",
       icon: <BsCodeSquare size={28} />,
-      label: t("menu.portfolio")
+      label: t("menu.portfolio"),
+      description: t("menu.portfolioDescription"),
     },
     // {
     //   id: "timeline",
     //   icon: <FaTimeline size={28} />,
-    //   label: t("menu.timeline")
+    //   label: t("menu.timeline"),
+    //   description: t("menu.timelineDescription"),
     // },
     {
       id: "rock",
       icon: <FaGuitar size={28} />,
-      label: t("menu.rock")
+      label: t("menu.rock"),
+      description: t("menu.rockDescription"),
     }
   ]), [t]);
 
@@ -58,34 +63,36 @@ export default function Home() {
       <NavMenu
         options={sections}
       />
-      <MainSection
-        title={t("home.title")}
-        subtitle={t("home.subtitle")}
-        slogan={t("home.slogan")}
-        linkedinLabel={t("home.links.linkedin")}
-        githubLabel={t("home.links.github")}
-        socialMidiaLabel={t("home.links.socialMidiaLabel")}
-      />
-      {/* <Badge
+      <div role="main">
+        <MainSection
+          title={t("home.title")}
+          subtitle={t("home.subtitle")}
+          slogan={t("home.slogan")}
+          linkedinLabel={t("home.links.linkedin")}
+          githubLabel={t("home.links.github")}
+          socialMidiaLabel={t("home.links.socialMidiaLabel")}
+        />
+        {/* <Badge
         imageSrc="/images/peace.webp"
         // url={t("tribute.url")}
         message={t("tribute.message")}
 
       /> */}
-      <AboutSection
-        title={t("home.about.title")}
-      />
-      <PortfolioSection
-        description={t("home.portfolio.title")}
-        projects={t("home.portfolio.projects", { returnObjects: true })}
-        viewOnGithub={t("home.portfolio.github")}
-      />
-      {/* <TimelineSection
+        <AboutSection
+          title={t("home.about.title")}
+        />
+        <PortfolioSection
+          description={t("home.portfolio.title")}
+          projects={t("home.portfolio.projects", { returnObjects: true })}
+          viewOnGithub={t("home.portfolio.github")}
+        />
+        {/* <TimelineSection
         itens={t("home.timeline.itens", { returnObjects: true }) as Item[]}
       /> */}
-      <RockSection
-        description={t("home.rock.description")}
-        shows={t("home.rock.shows", { returnObjects: true })} />
+        <RockSection
+          description={t("home.rock.description")}
+          shows={t("home.rock.shows", { returnObjects: true })} />
+      </div>
       <Footer
         rights={t("home.footer.rights")}
         contact={t("home.footer.contact")}

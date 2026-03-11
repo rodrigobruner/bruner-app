@@ -12,7 +12,7 @@ interface FooterArgs {
 
 export default function Footer(args: FooterArgs) {
   return (
-    <FooterContainer>
+    <FooterContainer role="contentinfo">
       <p>
         &copy; {new Date().getFullYear()} Rodrigo Bruner. {args.rights}
       </p>
