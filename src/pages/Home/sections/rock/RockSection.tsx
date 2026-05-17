@@ -1,7 +1,9 @@
 import FlipCard from "../../../../componets/FlipCard/FlipCard";
 
 import rock_acdc_2026 from "../../../../assets/images/rock_acdc_2026.webp"
+import rock_iron_maden_2026 from "../../../../assets/images/rock_iron_maden_2026.webp"
 import rock_gunsnroses_2026 from "../../../../assets/images/rock_guns_n_roses_2026.webp"
+import rock_lynyrd_skynyrd_2026 from "../../../../assets/images/rock_lynyrd_skynyrd_2026.webp"
 import rock_motleycrue_2026 from "../../../../assets/images/rock_motley_crue_2026.webp"
 import rock_theoffspring_2025 from "../../../../assets/images/rock_theoffspring_2025.webp"
 import rock_acdc_2025 from "../../../../assets/images/rock_acdc_2025.webp"
@@ -38,9 +40,21 @@ export default function RockSection(args: RockArgs) {
                     note='Toronto, ON, Canada'
                     text={args.shows.acdc2026.description} />
                 <FlipCard
+                    image={rock_iron_maden_2026}
+                    title='Iron Maiden'
+                    subtitle='Run For Your Lives World Tour 2026'
+                    note='Toronto, ON, Canada'
+                    text={args.shows.ironmaiden2026.description} />
+                <FlipCard
                     image={rock_gunsnroses_2026}
                     title="Guns N' Roses"
                     subtitle='World Tour 2026'
+                    note='Toronto, ON, Canada'
+                    text={args.shows.gunsnroses.description} />
+                <FlipCard
+                    image={rock_lynyrd_skynyrd_2026}
+                    title="Lynyrd Skynyrd"
+                    subtitle='Lynyrd Skynyrd x Foreigner'
                     note='Toronto, ON, Canada'
                     text={args.shows.gunsnroses.description} />
                 <FlipCard

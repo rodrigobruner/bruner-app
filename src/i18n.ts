@@ -84,12 +84,19 @@ const resources = {
             acdc2026: {
               description: "Coming soon. On Sep. 16, 2026",
             },
+            ironmaiden2026: {
+              description: "Coming soon. On Aug. 30, 2026",
+            },
             gunsnroses: {
               description: "Coming soon. On Aug. 05, 2026",
+            },
+            lynyrd_skynyrd:{
+              desiption: "Coming soon. On Jul. 30, 2026",
             },
             motleycrue: {
               description: "Coming soon. On Jul. 22, 2026",
             },
+
             theoffspring: {
               description: "Jimmy Eat World surprised in the opening, and The Offspring made the audience roar with hits, laughs, and an unforgettable tribute to Ozzy Osbourne, pure emotion!",
             },
@@ -201,8 +208,14 @@ const resources = {
             acdc2026: {
               description: "Em breve. Em 16 de Setembro de 2026",
             },
+            ironmaiden2026: {
+              description: "Em breve. Em 30 de Agosto de 2026",
+            },
             gunsnroses: {
               description: "Em breve. Em 05 de Agosto de 2026",
+            },
+            lynyrd_skynyrd:{
+              desiption: "Em breve. Em 30 de Julho de 2026",
             },
             motleycrue: {
               description: "Em breve. Em 22 de Julho de 2026",
