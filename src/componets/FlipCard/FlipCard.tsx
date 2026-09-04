@@ -10,6 +10,7 @@ interface FlipCardProps {
   title: string;
   subtitle: string;
   note: string;
+  date: string;
   text: string;
 }
 
@@ -25,6 +26,7 @@ export default function FlipCard(props: FlipCardProps) {
           <h1>{props.title}</h1>
           <h2>{props.subtitle}</h2>
           <p className="bold">{props.note}</p>
+          <p className="italic">{props.date}</p>
           <p style={{ padding: '20px' }}>{props.text}</p>
         </FlipCardBack>
       </FlipCardInner>
