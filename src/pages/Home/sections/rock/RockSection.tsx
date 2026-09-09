@@ -1,5 +1,6 @@
 import FlipCard from "../../../../componets/FlipCard/FlipCard";
 
+import rock_alice_cooper_2026 from "../../../../assets/images/rock_alice_cooper_2026.webp"
 import rock_twisted_sister_2026 from "../../../../assets/images/rock_twisted_sister_2026.webp"
 import rock_acdc_2026 from "../../../../assets/images/rock_acdc_2026.webp"
 import rock_iron_maden_2026 from "../../../../assets/images/rock_iron_maden_2026.webp"
@@ -35,12 +36,20 @@ export default function RockSection(args: RockArgs) {
             <RockDescription>{args.description}</RockDescription>
             <RockGrid>
                 <FlipCard
+                    image={rock_alice_cooper_2026}
+                    title='Alice Cooper'
+                    subtitle='Alice`s Attic'
+                    note='Windsor, ON, Canada'
+                    date={args.shows.alicecooper2026.date}
+                    text={args.shows.alicecooper2026.description} />
+
+                <FlipCard
                     image={rock_twisted_sister_2026}
                     title='Twisted Sister'
-                    subtitle='featuring Sebastian Bach on Lead Vocals'
+                    subtitle='Featuring Sebastian Bach on Lead Vocals'
                     note='Niagra Falls, ON, Canada'
-                    date={args.shows.acdc2026.date}
-                    text={args.shows.acdc2026.description} />
+                    date={args.shows.twisted_sister2026.date}
+                    text={args.shows.twisted_sister2026.description} />
 
                 <FlipCard
                     image={rock_acdc_2026}

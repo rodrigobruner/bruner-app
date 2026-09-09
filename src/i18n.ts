@@ -81,6 +81,10 @@ const resources = {
         rock: {
           description: "Rock has always been an important part of my life. It's the soundtrack that inspires me, motivates me, and accompanies me in different moments. Whenever possible, I like to reconnect with that energy at concerts of the bands I enjoy, it's a way to recharge and live intense experiences that also drive me in my work as a developer.",
           shows: {
+            alicecooper2026: {
+              description: "Coming soon.",
+              date: "Nov 06, 2026",
+            },
             twisted_sister2026: {
               description: "Coming soon.",
               date: "Oct 08, 2026",
@@ -221,6 +225,10 @@ const resources = {
         rock: {
           description: "O rock sempre foi uma parte importante da minha vida. É a trilha sonora que me inspira, me motiva e me acompanha em diferentes momentos. Sempre que possível, gosto de me reencontrar com essa energia em shows das bandas que curto, é uma forma de me recarregar e viver experiências intensas que depois também me impulsionam no meu trabalho como desenvolvedor.",
           shows: {
+            alicecooper2026: {
+              description: "Em breve.",
+              date: "06 nov, 2026",
+            },
             twisted_sister2026: {
               description: "Em breve.",
               date: "08 out, 2026",
