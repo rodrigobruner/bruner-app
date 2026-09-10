@@ -90,8 +90,10 @@ const resources = {
               date: "Oct 08, 2026",
             },
             acdc2026: {
-              description: "Coming soon.",
+              description: "The AC/DC concert in Toronto has been canceled after a severe thunderstorm caused “significant damage” to Rogers Stadium.",
               date: "Sep 16, 2026",
+              moreText: "[ Read more ]",
+              moreUrl: "https://www.cbc.ca/news/canada/toronto/acdc-concert-cancelled-rogers-stadium-9.7338010"
             },
             ironmaiden2026: {
               description: "The show's production was impressive, with an energetic and engaging performance by the band.",
@@ -234,8 +236,10 @@ const resources = {
               date: "08 out, 2026",
             },
             acdc2026: {
-              description: "Em breve.",
+              description: "Infelizmente, o show do AC/DC em Toronto foi cancelado depois que uma forte tempestade causou “danos significativos” ao Rogers Stadium.",
               date: "16 set, 2026",
+              moreText: "[ Leia mais ]",
+              moreUrl: "https://www.cbc.ca/news/canada/toronto/acdc-concert-cancelled-rogers-stadium-9.7338010"
             },
             ironmaiden2026: {
               description: "Impressionante a produção do show, com uma performance energética e envolvente da banda.",
@@ -270,7 +274,7 @@ const resources = {
               date: "26 nov, 2023",
             },
             kiss: {
-              description: "Que espetáculo! Na última turnê, a banda provou que ainda tinha fôlego de sobra — pirotecnia, energia e uma presença de palco arrebatadora do início ao fim.",
+              description: "Que espetáculo! Na última turnê, a banda provou que ainda tinha fôlego de sobra, pirotecnia, energia e uma presença de palco arrebatadora do início ao fim.",
               date: "25 abr, 2023",
             },
             scorpions: {

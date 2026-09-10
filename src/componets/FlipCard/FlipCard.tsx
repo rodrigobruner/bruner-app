@@ -12,6 +12,8 @@ interface FlipCardProps {
   note: string;
   date: string;
   text: string;
+  moreText?: string;
+  moreUrl?: string;
 }
 
 
@@ -27,7 +29,10 @@ export default function FlipCard(props: FlipCardProps) {
           <h2>{props.subtitle}</h2>
           <p className="bold">{props.note}</p>
           <p className="italic">{props.date}</p>
-          <p style={{ padding: '20px' }}>{props.text}</p>
+          <p style={{ padding: '10px' }}>{props.text}</p>
+          {props.moreText && props.moreUrl && (
+            <a href={props.moreUrl} target="_blank" rel="noopener noreferrer" style={{ padding: '5px', display: 'block' }}>{props.moreText}</a>
+          )}
         </FlipCardBack>
       </FlipCardInner>
     </FlipCardContainer>

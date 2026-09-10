@@ -57,7 +57,9 @@ export default function RockSection(args: RockArgs) {
                     subtitle='Power up Tour 2026'
                     note='Toronto, ON, Canada'
                     date={args.shows.acdc2026.date}
-                    text={args.shows.acdc2026.description} />
+                    text={args.shows.acdc2026.description}
+                    moreText={args.shows.acdc2026.moreText}
+                    moreUrl={args.shows.acdc2026.moreUrl} />
                 <FlipCard
                     image={rock_iron_maden_2026}
                     title='Iron Maiden'
