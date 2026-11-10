@@ -1,19 +1,19 @@
 import FlipCard from "../../../../componets/FlipCard/FlipCard";
 
-import rock_alice_cooper_2026 from "../../../../assets/images/rock_alice_cooper_2026.webp"
-import rock_twisted_sister_2026 from "../../../../assets/images/rock_twisted_sister_2026.webp"
-import rock_acdc_2026 from "../../../../assets/images/rock_acdc_2026.webp"
-import rock_iron_maden_2026 from "../../../../assets/images/rock_iron_maden_2026.webp"
-import rock_gunsnroses_2026 from "../../../../assets/images/rock_guns_n_roses_2026.webp"
-import rock_lynyrd_skynyrd_2026 from "../../../../assets/images/rock_lynyrd_skynyrd_2026.webp"
-import rock_motleycrue_2026 from "../../../../assets/images/rock_motley_crue_2026.webp"
-import rock_theoffspring_2025 from "../../../../assets/images/rock_theoffspring_2025.webp"
-import rock_acdc_2025 from "../../../../assets/images/rock_acdc_2025.webp"
-import rock_kiss_2023 from "../../../../assets/images/rock_kiss_2023.webp"
-import rock_scorpions_2023 from "../../../../assets/images/rock_scorpions_2023.webp"
-import rock_deep_purple_2017 from "../../../../assets/images/rock_deep_purple_2017.webp"
-import rock_massacration_2023 from "../../../../assets/images/rock_massacration_2023.webp"
-import rock_velhas_virgens_2024 from "../../../../assets/images/rock_velhas_virgens_2024.webp"
+import rock_alice_cooper_2026 from "../../../../assets/images/rock/rock_alice_cooper_2026.webp"
+import rock_twisted_sister_2026 from "../../../../assets/images/rock/rock_twisted_sister_2026.webp"
+import rock_acdc_2026 from "../../../../assets/images/rock/rock_acdc_2026.webp"
+import rock_iron_maden_2026 from "../../../../assets/images/rock/rock_iron_maden_2026.webp"
+import rock_gunsnroses_2026 from "../../../../assets/images/rock/rock_guns_n_roses_2026.webp"
+import rock_lynyrd_skynyrd_2026 from "../../../../assets/images/rock/rock_lynyrd_skynyrd_2026.webp"
+import rock_motleycrue_2026 from "../../../../assets/images/rock/rock_motley_crue_2026.webp"
+import rock_theoffspring_2025 from "../../../../assets/images/rock/rock_theoffspring_2025.webp"
+import rock_acdc_2025 from "../../../../assets/images/rock/rock_acdc_2025.webp"
+import rock_kiss_2023 from "../../../../assets/images/rock/rock_kiss_2023.webp"
+import rock_scorpions_2023 from "../../../../assets/images/rock/rock_scorpions_2023.webp"
+import rock_deep_purple_2017 from "../../../../assets/images/rock/rock_deep_purple_2017.webp"
+import rock_massacration_2023 from "../../../../assets/images/rock/rock_massacration_2023.webp"
+import rock_velhas_virgens_2024 from "../../../../assets/images/rock/rock_velhas_virgens_2024.webp"
 
 import {
     RockContainer,

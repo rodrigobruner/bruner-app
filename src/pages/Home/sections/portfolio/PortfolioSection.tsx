@@ -6,6 +6,8 @@ import {
     ProjectsGrid,
 } from "./PortfolioSection.styles"
 
+import vsfood from "../../../../assets/images/portifolio/vs-food.gif"
+
 
 interface PortifolioArgs {
     description:string;
@@ -20,26 +22,35 @@ export default function PortfolioSection(args: PortifolioArgs) {
             <PortifolioTitle>{args.description}</PortifolioTitle>
             <ProjectsGrid>
                 <ProjectCard
+                    imageUrl={vsfood}
+                    imageAlt={args.projects.vs_food.title}
+                    title={args.projects.vs_food.title}
+                    description={args.projects.vs_food.description}
+                    url="https://www.videosoft.com.br/"
+                    viewOnGithub=""
+                    company={args.projects.vs_food.company}
+                />
+                <ProjectCard
                     imageUrl="https://github.com/rodrigobruner/out_of_the_nest_android_app/raw/main/images/screen_recording.gif"
-                    imageAlt={args.projects.project1.title}
-                    title={args.projects.project1.title}
-                    description={args.projects.project1.description}
+                    imageAlt={args.projects.out_of_the_nest.title}
+                    title={args.projects.out_of_the_nest.title}
+                    description={args.projects.out_of_the_nest.description}
                     url="https://github.com/rodrigobruner/out_of_the_nest_android_app/"
                     viewOnGithub={args.viewOnGithub}
                 />
                 <ProjectCard
                     imageUrl="https://github.com/rodrigobruner/car-reservation-system/raw/main/screenshot.gif"
-                    imageAlt={args.projects.project2.title}
-                    title={args.projects.project2.title}
-                    description={args.projects.project2.description}
+                    imageAlt={args.projects.vehicle_reservation.title}
+                    title={args.projects.vehicle_reservation.title}
+                    description={args.projects.vehicle_reservation.description}
                     url="https://github.com/rodrigobruner/car-reservation-system/"
                     viewOnGithub={args.viewOnGithub}
                 />
                 <ProjectCard
                     imageUrl="https://github.com/rodrigobruner/cleverOwl/raw/main/screenshot.gif"
-                    imageAlt={args.projects.project3.title}
-                    title={args.projects.project3.title}
-                    description={args.projects.project3.description}
+                    imageAlt={args.projects.clever_owl.title}
+                    title={args.projects.clever_owl.title}
+                    description={args.projects.clever_owl.description}
                     url="https://github.com/rodrigobruner/cleverOwl/"
                     viewOnGithub={args.viewOnGithub}
                 />

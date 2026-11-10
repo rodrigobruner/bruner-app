@@ -50,5 +50,5 @@ export const ProjectCardContainer = styled.div`
 export const ProjectImage = styled.img`
   width: 100%;
   height: 400px;
-  object-fit: cover;
+  object-fit: contain;
 `;

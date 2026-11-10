@@ -20,10 +20,13 @@ export const PortifolioContainer = styled.section`
 export const ProjectsGrid = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(480px, 1fr);
   gap: 15px;
-  justify-items: center;
-  grid-auto-rows: 1fr;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+  
 `;
 
 export const PortifolioTitle = styled.h2`

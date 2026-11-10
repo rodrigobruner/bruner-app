@@ -43,15 +43,20 @@ const resources = {
           title: "My Portfolio",
           github: "View on GitHub",
           projects: {
-            project1: {
+            vs_food: {
+              title: "VS Food",
+              company: "Company: Videosoft",
+              description: "The App Totem evolved through three major architectural versions: initially built with JavaFX, later migrated to an Angular-based Progressive Web App (PWA) with offline capabilities and local caching, and eventually redesigned as a cloud solution on AWS. The platform uses Node.js for local hardware integrations, including printing, payment processing (TEF), and OSInterface, as well as microservices for queue management. The administrative system is built with PHP, using Slim Framework and Eloquent ORM.",
+            },
+            out_of_the_nest: {
               title: "Out of the Nest",
               description: "Out of the Nest is a mobile application designed to help families find welcoming and accessible locations, including restaurants, parks, events, or pet-friendly places.",
             },
-            project2: {
+            vehicle_reservation: {
               title: "Vehicle Reservation System ",
               description: "A web application built with .NET C# and Razor Pages that allows users to create and manage vehicle reservations.",
             },
-            project3: {
+            clever_owl: {
               title: "CleverOwl",
               description: "CleverOwl is an iOS app built with Swift, designed to help users organize their tasks in a simple and effective way.",
             },
@@ -190,15 +195,20 @@ const resources = {
           title: "Meu Portfólio",
           github: "Ver no GitHub",
           projects: {
-            project1: {
+            vs_food: {
+              title: "VS Food",
+              company: "Empresa: Videosoft",
+              description: "O App Totem evoluiu por meio de três grandes versões arquiteturais: inicialmente desenvolvido em JavaFX, posteriormente migrado para uma aplicação Angular baseada em Progressive Web App (PWA), com recursos de operação offline e armazenamento em cache, e finalmente evoluído para uma arquitetura cloud-native na AWS. A solução utiliza Node.js para integrações locais com hardware, incluindo impressão, processamento de pagamentos (TEF) e OSInterface, além de microsserviços para gerenciamento de senhas e filas. O sistema administrativo é desenvolvido em PHP, utilizando o framework Slim e o ORM Eloquent.",
+            },
+            out_of_the_nest: {
               title: "Out of the Nest",
               description: "Out of the Nest é um aplicativo móvel projetado para ajudar famílias a encontrar locais acolhedores e acessíveis, incluindo restaurantes, parques, eventos ou lugares que aceitam animais de estimação.",
             },
-            project2: {
+            vehicle_reservation: {
               title: "Vehicle Reservation System ",
               description: "Uma aplicação web construída com .NET C# e Razor Pages que permite aos usuários criar e gerenciar reservas de veículos.",
             },
-            project3: {
+            clever_owl: {
               title: "CleverOwl",
               description: "CleverOwl é um aplicativo iOS construído com Swift, projetado para ajudar os usuários a organizar suas tarefas de maneira simples e eficaz.",
             },
