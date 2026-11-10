@@ -43,6 +43,11 @@ const resources = {
           title: "My Portfolio",
           github: "View on GitHub",
           projects: {
+            vsd_ui:{
+              title: "VSD-UI",
+              company: "Company: Videosoft",
+              description: "Shared UI component library developed in Angular 21, with over 85 reusable components and standardized APIs, used by multiple applications in the workspace. It offers semantic CSS design tokens and support for light and dark themes, as well as specialized components for content editing and data visualization. Developed with TypeScript, Angular, ng-packagr, Tiptap, and Chart.js, it is distributed as a package via GitHub Packages."
+            },
             vs_food: {
               title: "VS Food",
               company: "Company: Videosoft",
@@ -87,11 +92,11 @@ const resources = {
           description: "Rock has always been an important part of my life. It's the soundtrack that inspires me, motivates me, and accompanies me in different moments. Whenever possible, I like to reconnect with that energy at concerts of the bands I enjoy, it's a way to recharge and live intense experiences that also drive me in my work as a developer.",
           shows: {
             alicecooper2026: {
-              description: "Coming soon.",
+              description: "Unbelievable! We loved every song in the concert; it was one hit after another.",
               date: "Nov 06, 2026",
             },
             twisted_sister2026: {
-              description: "Coming soon.",
+              description: "An incredible concert, with a great set list, lots of energy on stage, and great interaction with the audience.",
               date: "Oct 08, 2026",
             },
             acdc2026: {
@@ -195,6 +200,11 @@ const resources = {
           title: "Meu Portfólio",
           github: "Ver no GitHub",
           projects: {
+            vsd_ui:{
+              title: "VSD-UI",
+              company: "Empresa: Videosoft",
+              description: "Biblioteca compartilhada de componentes UI desenvolvida em Angular 21, com mais de 85 componentes reutilizáveis e APIs padronizadas, utilizada por múltiplas aplicações do workspace. Oferece design tokens CSS semânticos e suporte a temas claro e escuro, além de componentes especializados para edição de conteúdo e visualização de dados. Desenvolvida com TypeScript, Angular, ng-packagr, Tiptap e Chart.js, é distribuída como pacote por meio do GitHub Packages."
+            },
             vs_food: {
               title: "VS Food",
               company: "Empresa: Videosoft",
@@ -238,11 +248,11 @@ const resources = {
           description: "O rock sempre foi uma parte importante da minha vida. É a trilha sonora que me inspira, me motiva e me acompanha em diferentes momentos. Sempre que possível, gosto de me reencontrar com essa energia em shows das bandas que curto, é uma forma de me recarregar e viver experiências intensas que depois também me impulsionam no meu trabalho como desenvolvedor.",
           shows: {
             alicecooper2026: {
-              description: "Em breve.",
+              description: "Incrível! Amamos cada música do show, foi um hit atrás do outro.",
               date: "06 nov, 2026",
             },
             twisted_sister2026: {
-              description: "Em breve.",
+              description: "Um show incrível, com um ótimo setlist, muita energia no palco e ótima interação com o público.",
               date: "08 out, 2026",
             },
             acdc2026: {

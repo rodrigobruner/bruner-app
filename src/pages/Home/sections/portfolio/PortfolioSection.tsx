@@ -7,6 +7,7 @@ import {
 } from "./PortfolioSection.styles"
 
 import vsfood from "../../../../assets/images/portifolio/vs-food.gif"
+import vsdui from "../../../../assets/images/portifolio/vsd-ui.gif"
 
 
 interface PortifolioArgs {
@@ -21,6 +22,15 @@ export default function PortfolioSection(args: PortifolioArgs) {
         <PortifolioContainer id="portfolio">
             <PortifolioTitle>{args.description}</PortifolioTitle>
             <ProjectsGrid>
+                <ProjectCard
+                    imageUrl={vsdui}
+                    imageAlt={args.projects.vsd_ui.title}
+                    title={args.projects.vsd_ui.title}
+                    description={args.projects.vsd_ui.description}
+                    url="https://www.videosoft.com.br/"
+                    viewOnGithub=""
+                    company={args.projects.vsd_ui.company}
+                />
                 <ProjectCard
                     imageUrl={vsfood}
                     imageAlt={args.projects.vs_food.title}
