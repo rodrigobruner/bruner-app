@@ -48,6 +48,11 @@ const resources = {
               company: "Company: Videosoft",
               description: "Shared UI component library developed in Angular 21, with over 85 reusable components and standardized APIs, used by multiple applications in the workspace. It offers semantic CSS design tokens and support for light and dark themes, as well as specialized components for content editing and data visualization. Developed with TypeScript, Angular, ng-packagr, Tiptap, and Chart.js, it is distributed as a package via GitHub Packages."
             },
+            vs_central:{
+              title: "VSD-Central",
+              company: "Company: Videosoft",
+              description: "Modular architecture consisting of API, admin panel, workers, and real-time communication service. Developed with Bun, Node.js, Express, Angular 21, Prisma, and MariaDB/MySQL, it integrates AWS services such as S3, SQS, and SES. Asynchronous processing is handled by workers, while the Connector uses Socket.io for real-time communication. The infrastructure utilizes Docker and CI/CD pipelines with GitHub Actions."
+            },
             vs_food: {
               title: "VS Food",
               company: "Company: Videosoft",
@@ -204,6 +209,11 @@ const resources = {
               title: "VSD-UI",
               company: "Empresa: Videosoft",
               description: "Biblioteca compartilhada de componentes UI desenvolvida em Angular 21, com mais de 85 componentes reutilizáveis e APIs padronizadas, utilizada por múltiplas aplicações do workspace. Oferece design tokens CSS semânticos e suporte a temas claro e escuro, além de componentes especializados para edição de conteúdo e visualização de dados. Desenvolvida com TypeScript, Angular, ng-packagr, Tiptap e Chart.js, é distribuída como pacote por meio do GitHub Packages."
+            },
+            vs_central:{
+              title: "VSD-Central",
+              company: "Empresa: Videosoft",
+              description: "Arquitetura modular composta por API, painel administrativo, workers e serviço de comunicação em tempo real. Desenvolvida com Bun, Node.js, Express, Angular 21, Prisma e MariaDB/MySQL, integra serviços AWS como S3, SQS e SES. O processamento assíncrono é realizado por workers, enquanto o Connector utiliza Socket.io para comunicação em tempo real. A infraestrutura utiliza Docker e pipelines de CI/CD com GitHub Actions."
             },
             vs_food: {
               title: "VS Food",

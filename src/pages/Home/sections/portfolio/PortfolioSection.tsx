@@ -7,6 +7,7 @@ import {
 } from "./PortfolioSection.styles"
 
 import vsfood from "../../../../assets/images/portifolio/vs-food.gif"
+import vscentral from "../../../../assets/images/portifolio/vs-central.gif"
 import vsdui from "../../../../assets/images/portifolio/vsd-ui.gif"
 
 
@@ -30,6 +31,15 @@ export default function PortfolioSection(args: PortifolioArgs) {
                     url="https://www.videosoft.com.br/"
                     viewOnGithub=""
                     company={args.projects.vsd_ui.company}
+                />
+                <ProjectCard
+                    imageUrl={vscentral}
+                    imageAlt={args.projects.vs_central.title}
+                    title={args.projects.vs_central.title}
+                    description={args.projects.vs_central.description}
+                    url="https://www.videosoft.com.br/"
+                    viewOnGithub=""
+                    company={args.projects.vs_central.company}
                 />
                 <ProjectCard
                     imageUrl={vsfood}
