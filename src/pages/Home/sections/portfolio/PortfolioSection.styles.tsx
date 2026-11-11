@@ -21,12 +21,19 @@ export const ProjectsGrid = styled.div`
   width: 100%;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(280px, 1fr);
+  grid-auto-columns: minmax(260px, 85%);
   gap: 15px;
 
   overflow-x: auto;
   overflow-y: hidden;
-  
+
+  @media (min-width: 768px) {
+    grid-auto-columns: minmax(360px, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-auto-columns: minmax(480px, 1fr);
+  }
 `;
 
 export const PortifolioTitle = styled.h2`
