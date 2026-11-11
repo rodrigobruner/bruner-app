@@ -21,7 +21,7 @@ export const ProjectsGrid = styled.div`
   width: 100%;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(480px, 1fr);
+  grid-auto-columns: minmax(280px, 1fr);
   gap: 15px;
 
   overflow-x: auto;
